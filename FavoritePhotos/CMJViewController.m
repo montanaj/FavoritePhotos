@@ -82,13 +82,11 @@
          }
              [self.myCollectionView reloadData];
             [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-         
-         //[task resume];
      }];
     
 }
 
-#pragma mark -- delegate Methods
+#pragma mark -- DELEGATE METHODS
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -100,11 +98,8 @@
     return 2;
 }
 
-
-
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     
     CollectionViewCell *photoCellOne =
     [self.myCollectionView dequeueReusableCellWithReuseIdentifier:@"collectionViewCellID" forIndexPath:indexPath];
@@ -119,9 +114,7 @@
     return photoCellOne;
 }
 
-
-
-#pragma mark -- UISEARCHBARDELEGATE
+#pragma mark -- UI SEARCHBAR DELEGATE
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
@@ -205,16 +198,5 @@
 //}
 
 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 @end
